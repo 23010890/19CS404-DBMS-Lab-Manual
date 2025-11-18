@@ -34,8 +34,24 @@ END;
 - Use an `IF` statement to compare the values.
 - Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
 
+#### Program:
+```
+DECLARE
+    a NUMBER := 80;
+    b NUMBER := 45;
+BEGIN
+    IF a > b THEN
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || a);
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Greater number is: ' || b);
+    END IF;
+END;
+```
+
 **Expected Output:**  
 Greater number is: 80
+
+<img width="302" height="142" alt="image" src="https://github.com/user-attachments/assets/0a0c5478-a9c6-4f6f-a69d-c67414d60758" />
 
 ---
 
@@ -47,8 +63,27 @@ Greater number is: 80
 - Use a `WHILE` loop to iterate from 1 to `n`, adding each number to the sum.
 - Display the result using `DBMS_OUTPUT.PUT_LINE`.
 
+#### Program:
+```
+DECLARE
+    n NUMBER := 10;
+    i NUMBER := 1;
+    sum NUMBER := 0;
+BEGIN
+    WHILE i <= n LOOP
+        sum := sum + i;
+        i := i + 1;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE('Sum of first ' || n || ' natural numbers is: ' || sum);
+END;
+```
+
 **Expected Output:**  
 Sum of first 10 natural numbers is: 55
+
+<img width="437" height="117" alt="image" src="https://github.com/user-attachments/assets/dcbad441-6a10-4a1b-a6f1-827d469f35b3" />
+
 
 ---
 
@@ -92,3 +127,4 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
